@@ -22,6 +22,8 @@ public class CommandTests implements ActionListener {
 			figureScript1(driverManager.getCurrentDriver());
 		} else if (figure == 2){
             figureScript2(driverManager.getCurrentDriver());
+        } else if (figure == 3){
+            figureScript3(driverManager.getCurrentDriver());
         }
 	}
 
@@ -41,6 +43,12 @@ public class CommandTests implements ActionListener {
     public static void figureScript2(Job2dDriver driver){
         CommandsFactory factory = new CommandsFactory(driver);
         DriverCommand command = factory.getComplexFigure1();
+        command.execute();
+    }
+
+    public static void figureScript3(Job2dDriver driver){
+        CommandsFactory factory = new CommandsFactory(driver);
+        DriverCommand command = factory.getComplexFigure2();
         command.execute();
     }
     

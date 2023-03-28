@@ -45,6 +45,11 @@ public class TestJobs2dPatterns {
 				DriverFeature.getDriverManager(), 2);
 
 		application.addTest("Complex command figure 1", selectTestFigureOptionListener4);
+
+		CommandTests selectTestFigureOptionListener5 = new CommandTests(
+				DriverFeature.getDriverManager(), 3);
+
+		application.addTest("Complex command figure 2", selectTestFigureOptionListener5);
 	}
 
 	/**

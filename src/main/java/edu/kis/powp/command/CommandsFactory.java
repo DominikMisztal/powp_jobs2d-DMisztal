@@ -18,4 +18,13 @@ public class CommandsFactory {
         commandSet.addCommand(new OperateToCommand(driver, 200, 100));
         return commandSet;
     }
+
+    public DriverCommand getComplexFigure2(){
+        ComplexCommand commandSet = new ComplexCommand();
+        commandSet.addCommand(new SetPositionCommand(driver, 0, 0));
+        commandSet.addCommand(new OperateToCommand(driver, 50, 50));
+        commandSet.addCommand(new OperateToCommand(driver, -100, 0));
+        commandSet.addCommand(new OperateToCommand(driver, 0, 0));
+        return commandSet;
+    }
 }
