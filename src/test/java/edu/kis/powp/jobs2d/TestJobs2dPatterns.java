@@ -8,6 +8,7 @@ import java.util.logging.Logger;
 import edu.kis.legacy.drawer.panel.DefaultDrawerFrame;
 import edu.kis.legacy.drawer.panel.DrawPanelController;
 import edu.kis.powp.appbase.Application;
+import edu.kis.powp.command.SetPositionCommand;
 import edu.kis.powp.jobs2d.drivers.adapter.Jobs2DToDrawerAdapter;
 import edu.kis.powp.jobs2d.drivers.adapter.LineDrawerAdapter;
 import edu.kis.powp.jobs2d.events.SelectChangeVisibleOptionListener;
@@ -106,6 +107,7 @@ public class TestJobs2dPatterns {
 				setupLogger(app);
 
 				app.setVisibility(true);
+
 			}
 		});
 	}
