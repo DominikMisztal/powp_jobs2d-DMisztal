@@ -41,14 +41,14 @@ public class CommandTests implements ActionListener {
 	}
 
     public static void figureScript2(Job2dDriver driver){
-        CommandsFactory factory = new CommandsFactory(driver);
-        DriverCommand command = factory.getComplexFigure1();
+        CommandsFactory factory = new CommandsFactory();
+        DriverCommand command = factory.getComplexFigure1(driver);
         command.execute();
     }
 
     public static void figureScript3(Job2dDriver driver){
-        CommandsFactory factory = new CommandsFactory(driver);
-        DriverCommand command = factory.getComplexFigure2();
+        CommandsFactory factory = new CommandsFactory();
+        DriverCommand command = factory.getComplexFigure2(driver);
         command.execute();
     }
     
