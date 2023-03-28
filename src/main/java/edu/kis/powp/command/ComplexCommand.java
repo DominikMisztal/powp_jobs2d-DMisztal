@@ -1,9 +1,11 @@
 package edu.kis.powp.command;
 
 import java.util.ArrayList;
+import java.util.List;
+
 
 public class ComplexCommand implements DriverCommand{
-    private ArrayList<DriverCommand> commands;
+    private List<DriverCommand> commands;
 
     public ComplexCommand(){
         commands = new ArrayList<>();
